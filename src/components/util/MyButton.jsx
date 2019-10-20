@@ -4,6 +4,7 @@ import Button from '@material-ui/core/Button'
 const MyButton = (props) => {
     return (
         <Button
+            onClick = {props.onClick}
             href={props.link}
             target={props.target}
             variant="contained"
