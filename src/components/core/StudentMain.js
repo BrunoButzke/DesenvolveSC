@@ -86,12 +86,12 @@ class Main extends Component {
     return (
       <div className="container">
 
-       <Popup style={{display: displayPopup}} 
-             score={score} 
-             total={total} 
-             startQuiz={this.handleStartQuiz}
-             popupPrefix={popupPrefix}
-             popupSufix={popupSufix}
+        <Popup style={{display: displayPopup}} 
+            score={score} 
+            total={total} 
+            startQuiz={this.handleStartQuiz}
+            popupPrefix={popupPrefix}
+            popupSufix={popupSufix}
         />
         
         <div className="row">
@@ -99,7 +99,8 @@ class Main extends Component {
                 <div id="question">
                     <h4 className="bg-light">Pergunta {count}/{total}</h4>
                     <MyButton
-                        text="Saiba mais"
+                        onClick={() => {alert('IBM Watson Discovery\n\nResposta: '+answers[correct-1])}}
+                        text="?"
                         bck='#FF9800'
                         color='#fff'
                     />
