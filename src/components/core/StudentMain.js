@@ -99,7 +99,7 @@ class Main extends Component {
                 <div id="question">
                     <h4 className="bg-light">Pergunta {count}/{total}</h4>
                     <MyButton
-                        onClick={() => {alert(answers[correct-1])}}
+                        onClick={() => {alert('IBM Watson Discovery\n\nResposta: '+answers[correct-1])}}
                         text="?"
                         bck='#FF9800'
                         color='#fff'
